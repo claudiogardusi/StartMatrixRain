@@ -160,9 +160,13 @@ document.getElementById("start-transition").addEventListener("click", () => {
   button.style.display = "none";
 
   // Revelar nova interface após transição
-  setTimeout(() => {
-    document.getElementById("cyber-interface").style.display = "block";
-  }, 2700);
+setTimeout(() => {
+  document.getElementById("cyber-interface").style.display = "block";
+}, 2700);
 
+// Redirecionamento após 4 segundos
+setTimeout(() => {
+  window.location.href = "https://claudiogardusi.github.io/";
+}, 1000);
 });
 
