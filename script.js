@@ -126,10 +126,6 @@ function toggleAnimation() {
   }
 }
 
-// function handleMouseMove(e) {
-//   mouseX = e.clientX;
-// }
-
 window.addEventListener("resize", debounce(resizeCanvas, 200));
 toggleBtn.addEventListener("click", toggleAnimation);
 
@@ -141,10 +137,6 @@ document.getElementById("start-transition").addEventListener("click", () => {
   const text = document.getElementById("circle-text");
   const matrix = document.getElementById("matrix");
   const button = document.getElementById("start-transition");
-
-  // // Fade-out da Matrix Rain
-  // matrix.style.transition = "opacity 2.5s ease-in-out";
-  // matrix.style.opacity = "0";
 
   // Crescimento do círculo
   circle.style.opacity = "1";
