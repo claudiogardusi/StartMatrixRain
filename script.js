@@ -116,7 +116,7 @@ function draw() {
 
 function toggleAnimation() {
   paused = !paused;
-  toggleBtn.textContent = paused ? "▶" : "⏸";
+  toggleBtn.textContent = paused ? ">" : "||";
 
   if (paused && animationId) {
     cancelAnimationFrame(animationId);
