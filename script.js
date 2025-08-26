@@ -167,6 +167,6 @@ setTimeout(() => {
 // Redirecionamento após 4 segundos
 setTimeout(() => {
   window.location.href = "https://claudiogardusi.github.io/";
-}, 1000);
+}, 3000);
 });
 

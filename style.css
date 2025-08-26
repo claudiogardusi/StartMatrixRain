@@ -1,3 +1,12 @@
+:root{
+  --bg-color: #000000;
+  --text-color: #6fda6f;
+  --button-bg-color: #519b51;
+  --button-text-color: #000000;
+  --transition-bg-color: #000000;
+  --transition-text-color: #6fda6f;
+} 
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +14,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: var(--bg-color);
   overflow: hidden;
   font-family: 'Share Tech Mono', monospace;
   color: #f0f0;
@@ -22,8 +31,8 @@ canvas {
   top: 10px;
   left: 10px;
   z-index: 10;
-  background-color: #0f0;
-  color: black;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   border: none;
   width: 30px;
   height: 30px;
@@ -47,12 +56,12 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
-  padding: 10px 20px;
+  padding:5px 20px;
   font-size: 16px;
-  background: #0F0;
+  background: var(--button-bg-color);
   color: black;
   border: none;
-  border-radius: 8px;
+  border-radius: 9px;
   cursor: pointer;
 }
 
@@ -62,7 +71,7 @@ canvas {
   left: 50%;
   width: 0;
   height: 0;
-  background: black;
+  background: var(--transition-bg-color);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -75,7 +84,7 @@ canvas {
 }
 
 #circle-text {
-  color: #0F0;
+  color: var(--transition-text-color);
   font-size: 24px;
   opacity: 0;
   transition: opacity 2s ease-in-out;
